@@ -1,6 +1,6 @@
 import React from "react";
-// import Table from "./Table";
-/*Add import statement here*/
+import Table from "./Table";
+import List from "./List";
 
 class App extends React.Component {
   constructor(props) {
@@ -48,7 +48,7 @@ class App extends React.Component {
   render() {
     let tabChoice = <div />;
 
-    /*Uncomment below to render assignments*/
+    /*   /*Uncomment below to render assignments*/
     /*if (this.state.buttonClicked === "assignments") {
       tabChoice = (
         <List
@@ -58,7 +58,7 @@ class App extends React.Component {
           title="Assignments"
         />
       );
-    }*/
+    }
 
     /* Change below to render students*/
 
