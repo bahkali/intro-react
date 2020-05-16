@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "./Table";
+// import Table from "./Table";
 /*Add import statement here*/
 
 class App extends React.Component {
@@ -9,7 +9,7 @@ class App extends React.Component {
     this.state = {
       buttonClicked: "",
       assignments: [] /*Below this line, add the students state variable*/,
-      grades: {}
+      grades: {},
     };
 
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
@@ -21,14 +21,14 @@ class App extends React.Component {
 
   handleButtonClicked(buttonName) {
     this.setState({
-      buttonClicked: buttonName
+      buttonClicked: buttonName,
     });
   }
 
   /*Check out this addAssignment method*/
   addAssignment(assignmentName) {
     this.setState({
-      assignments: this.state.assignments.concat(assignmentName)
+      assignments: this.state.assignments.concat(assignmentName),
     });
   }
 
@@ -89,7 +89,7 @@ class App extends React.Component {
       <div>
         <div className="Box Box--spacious f4">
           <div className="Box-header">
-            {/* Replace this line with the proper header code*/}
+            <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
           </div>
         </div>
         <nav className="UnderlineNav d-flex flex-justify-center">
